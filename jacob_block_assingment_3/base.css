@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    box-shadow: none;
+    box-sizing: border-box;
+    vertical-align: baseline;
+    transition-duration: 0s;
+    -webkit-transition-duration: 0s;
+    font-family: 'Times New Roman', Times, serif;
+}
