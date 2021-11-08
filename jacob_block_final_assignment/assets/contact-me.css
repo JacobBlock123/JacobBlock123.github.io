@@ -1,0 +1,274 @@
+/**************************/
+/* Hero Banner and Header */
+/**************************/
+
+header {
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    background: linear-gradient(to right, #8360c3, #2ebf91);
+    margin: 0 auto;
+    width: 100%;
+    color: white;
+    text-align: left;
+    line-height: 95px;
+    font-size: 23px;
+    text-transform: uppercase;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+}
+
+header p {
+    font-family: cursive;
+}
+
+.links {
+    text-transform: none;
+}
+
+#nav li a {
+    color: white;
+}
+
+#nav {
+    list-style-type: none;
+    padding-left: 150px;
+}
+
+li {
+    display: inline;
+    padding: 25px;
+}
+
+.links:hover {
+    text-decoration: underline;
+}
+
+.icon {
+    margin: 10px;
+    font-size: 25px;
+    color: white;
+}
+
+.icon-container {
+    background: rgba( 255, 255, 255, .25);
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.twitter:hover {
+    background-color: #1DA1F2;
+}
+
+.facebook:hover {
+    background-color: #4267B2;
+}
+
+.instagram:hover {
+    background: linear-gradient(210deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+}
+
+.mobile-nav p i {
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+#nav-background {
+    background-color: linear-gradient(to right, #8360c3, #2ebf91);
+}
+
+/*****************************/
+/* Media Queries             */
+/*****************************/
+
+@media screen and (min-width: 320px) {
+    .mobile-nav {display: block;}
+    #nav {display: none;}
+
+    .column-container {
+        grid-template-areas:
+        "col1"
+        "col2"
+        "col3"
+        "col4"
+        ;
+    }
+
+    .contact {
+        grid-template-areas: 
+        "form"
+        "info"
+        ;
+    }
+
+    .form {
+        width: 290px;
+    }
+
+    .info {
+        width: 290px;
+        height: 425px;
+    }
+}
+
+@media screen and (min-width: 580px) {
+    .mobile-nav {display: block;}
+    #nav {display: none;}
+
+    .column-container {
+        grid-template-areas:
+        "col1 col2"
+        "col3 col4"
+        ;
+    }
+
+    .form {
+        width: 450px;
+    }
+
+    .info {
+        width: 450px;
+        height: 400px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .contact {
+        grid-template-areas: 
+        "form"
+        "info"
+        ;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .mobile-nav {display: none;}
+    #nav {display: block;}
+
+    header {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .mobile-nav {display: none;}
+    #nav {display: block;}
+
+    .contact {
+        grid-template-areas: 
+        "form info"
+        ;
+    }
+
+    header {
+        font-size: 23px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .mobile-nav {display: none;}
+    #nav {display: block;}
+
+    .column-container {
+        grid-template-areas:
+        "col1 col2 col3 col4"
+        ;
+    }
+
+    .contact {
+        grid-template-areas: 
+        "form info"
+        ;
+    }
+}
+
+/*******************/
+/* Footer          */
+/*******************/
+
+footer {
+    display: flex;
+    width: 100%;
+    height: 75px;
+    background-image: linear-gradient(to right, #8360c3, #2ebf91);
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    bottom: 0;
+}
+
+.footer-text p {
+    width: auto;
+    color: white;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/********************/
+/* Form             */
+/********************/
+
+form {
+    background-color: rgb(240, 240, 240);
+    width: 60%;
+    height: 60vh;
+    position: absolute;
+    top: 150px;
+    left: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+form h2 {
+    text-align: center;
+    
+}
+
+input {
+    width: 90%;
+    height: 30px;
+    padding-left: 5px;
+    border-radius: 5px;
+}
+
+form textarea {
+    width: 90%;
+    height: 90px;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-top: 5px;
+    font-family: Helvetica, Arial, sans-serif;
+    resize: none;
+}
+
+.send {
+    border-radius: 50px;
+    height: 50px;
+    width: 90%;
+    background-color: #2ebf91;
+    color: white;
+    transition: background-color 1s;
+}
+
+.send:hover {
+    background-color: #8360c3;
+}
