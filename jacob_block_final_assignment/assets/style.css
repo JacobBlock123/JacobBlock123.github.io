@@ -47,13 +47,25 @@ li {
     width: 100%;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 200% 200%;
     position: relative;
     background-attachment: scroll;
     top: -100px;
     display: flex;
     justify-content: center;
     align-items: center;
+    animation-name: moving-gradient;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes moving-gradient {
+    0% {background-position: 0% 50%;}
+
+    50% {background-position: 100% 50%;}
+
+    100% {background-position: 0% 50%;}
 }
 
 .links:hover {
