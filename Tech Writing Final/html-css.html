@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>In Class Project</title>
+        <link rel="shortcut icon" href="" type="image/x-icon">
+
+        <link rel="stylesheet" href="assets/base.css">
+        <link rel="stylesheet" href="assets/articles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    </head>
+
+    <body>
+        <div class="parent">
+            <header>
+                <p>HTML and CSS Basics</p>
+                <ul id="nav">
+                    <li class="links"><a href="index.html">Home</a></li>
+                    <li class="links"><a href="articles.html">Articles</a></li>
+                    <li class="links"><a href="contact-me.html">Contact Me</a></li>
+                    <li class="links"><a href="about-me.html">About Me</a></li>
+                </ul>
+
+                <div class="mobile-nav">
+                    <p><i class="fas fa-bars menu" title="Menu"></i></p>
+                </div>
+            </header>
+
+            <div class="text-container">
+            <p class="main-text">
+                &nbsp;&nbsp; Hyper Text Markup Language (HTML) is a coding language used to create websites. HTML can do a wide variety of things and creates all the websites you see online. HTML uses tags, elements, and attributes to create these amazing websites. Although, HTML gets some help from another coding language called Cascading Style Sheets (CSS) for styling of these elements. So, what are elements, attributes and tags and what is CSS? One thing to add before we start is that all curly brackets "{}" are supposed to triangle brackets (less than and greater than symbols) when actually coded in html (in css they are actually curly brackets).
+            <br><br>
+              &nbsp;&nbsp;Elements are almost anything on a webpage, such as images, paragraphs and headers. These elements, when put together, can make awesome web pages. That’s where tags and attributes come in. Tags are what you write in your code that make these elements appear. All tags have an opening tag and many also include a closing tag. For example {p}Hello World!{/p} is a paragraph element, {p} is the opening tag and {/p} is the closing tag. This example paragraph tag {p}Hello World!{/p} would display the text “Hello World!” on the webpage. 
+              <br><br>  
+              &nbsp;&nbsp;Tags have an issue though, they can’t be styled. This means that their colour, size and other appearance related things can’t be changed and are set to default settings. This is where attributes and CSS come in. Attributes are things such as height, width, and colour. These are all changed using CSS. An example of CSS can be seen below:
+              <br><br>
+              p {
+                <br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;color: red;
+              <br><br>
+          	&nbsp;&nbsp;&nbsp;&nbsp;font-size: 10px;
+              <br><br>
+          	&nbsp;&nbsp;&nbsp;&nbsp;line-height: 1.6;
+              <br><br>
+}
+<br><br>
+&nbsp;&nbsp;The code above would change our simple paragraph into something more interesting. First, we change the colour attribute of our text to red, next we change the font size to 10px, and finally, we change the line height to 1.6 times normal (line-height is the same as line spacing in word). The code above can be broken into different parts: First is the selector which is simply the “p” before the curly brackets (this is selecting all {p}{/p} tags), second are the properties/attributes which are “color”, “font-size” and “line-height”, which decide the attribute of the selected element that will be changed, and finally we have the values which are “red”, “10px” and “1.6”, these are values given to each attribute.
+          	<br><br>
+              &nbsp;&nbsp;A final thing to add is about the different types of HTML elements. HTML elements can be categorized as block or inline. Block elements are elements that by default go on separate lines from other elements. Inline elements don’t separate and simply go beside other elements.
+              <br><br>
+              Example #1 Inline Elements:
+              <br><br>
+              [element1] [element2]
+              <br><br>
+              Example #2 Block Elements:
+              <br><br>
+              [element1]
+              <br><br>
+              [element2]
+          	<br><br>
+              &nbsp;&nbsp;In the examples shown above we can see the two different types of elements. Example #1 shows element2 as an inline element and Example #2 shows element2 as a block element. You can change an element to inline or block using the “display” attribute in CSS, this can be seen in the examples below.
+              <br><br>
+              Example #1
+              <br><br>
+              p {
+                <br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;display: inline;
+                <br><br>
+}
+<br><br>
+Example #2
+<br><br>
+p {
+    <br><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;display: block;
+              <br><br>
+}
+<br><br>
+&nbsp;&nbsp;In this article we learned some basics of HTML and CSS and what they are. I hope you enjoyed the article, if you want to learn more about CSS and HTML you can further into some intermediate articles about web development.
+
+
+            </p>
+            </div>
+
+            <footer>
+                <div class="icons">
+                    <div class="icon-container facebook">
+                        <i class="fab fa-facebook icon"></i>
+                    </div>
+            
+                    <div class="icon-container instagram">
+                        <i class="fab fa-instagram icon"></i>
+                    </div>
+                        
+                    <div class="icon-container twitter">
+                        <i class="fab fa-twitter icon"></i>
+                    </div>
+                </div>
+
+                <div class="footer-text">
+                    <p>Copyright &copy; 2021</p>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
