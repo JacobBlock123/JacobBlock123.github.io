@@ -202,6 +202,17 @@ footer {
     justify-content: flex-start;
 }
 
+.footer {
+    display: flex;
+    width: 100%;
+    height: 75px;
+    background-image: linear-gradient(to right, #8360c3, #2ebf91);
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    bottom: 0;
+}
+
 .footer-text p {
     width: auto;
     color: white;
@@ -252,3 +263,80 @@ span {
     text-align: center;
 }
 
+.main-text {
+    margin-top: 100px;
+    width: 75%;
+    margin-bottom: 50px;
+}
+
+.pumpkin-text {
+    margin-top: 50px;
+    width: 75%;
+    margin-bottom: 50px;
+}
+
+.text {
+    width: 75%;
+}
+
+.text-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.image {
+    width: 50%;
+    height: auto;
+    margin-top: 100px;
+}
+
+.image2 {
+    width: 40%;
+    height: auto;
+    margin-top: 100px;
+}
+
+.image-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    width: 50%;
+    height: auto;
+}
+
+tr {
+    width: 25%;
+    height: auto;
+    border: 2px black solid;
+}
+
+td {
+    margin: 10px;
+}
+
+
+.articles {
+    margin-top: 150px;
+    width: 500px;
+    background-color: #efefef;
+    border-radius: 10px;
+    height: 60vh;
+    margin-left: 50px;
+    padding: 25px;
+}
+
+.articles ul li {
+    display: block;
+}
+
+.articles h2 {
+    text-align: center;
+}

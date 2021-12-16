@@ -28,181 +28,20 @@
                 </div>
             </header>
 
-            <div class="article top-article">
-
-                <h2>HMTL and CSS Basics</h2>
-
-                <br><br>
-
-                <p>
-                    &nbsp; &nbsp; Hyper Text Markup Language (HTML) is a coding language used to create websites. HTML can do a wide variety of things and 
-                    creates all the websites you see online. HTML uses tags, elements, and attributes to create these amazing websites. 
-                    Although, HTML gets some help from another coding language called Cascading Style Sheets (CSS) for styling of these 
-                    elements. So, what are elements, attributes and tags and what is CSS?
-
-                    <br><br>
-
-                    &nbsp; &nbsp; Elements are almost anything on a webpage, such as images, paragraphs and headers. These elements, when put 
-                    together, can make awesome web pages. That’s where tags and attributes come in. Tags are what you write in your code 
-                    that make these elements appear. All tags have an opening tag and many also include a closing tag. For example 
-                    [p]Hello World![/p] is a paragraph element, [p] is the opening tag and [/p] is the closing tag. This example paragraph 
-                    tag [p]Hello World![/p] would display the text “Hello World!” on the webpage (all square brackets in code examples
-                    should actually be triangle brackets, but this is typed in an actual HTML document meaning that would affect the
-                    website).
-
-                    <br><br>
-
-                    &nbsp; &nbsp; Tags have an issue though, they can’t be styled. This means that their colour, size and other appearance related 
-                    things can’t be changed and are set to default settings. This is where attributes and CSS come in. Attributes are 
-                    things such as height, width, and colour. These are all changed using CSS. An example of CSS can be seen below:
-
-                    <br><br>
-
-                    p {
-                        <br>
-                        &nbsp; &nbsp; color: red;
-                        <br>
-                        &nbsp; &nbsp; font-size: 10px;
-                        <br>
-                        &nbsp; &nbsp; line-height: 1.6;
-                        <br>
-                    }
-
-                    <br><br>
-                                    
-                    &nbsp; &nbsp; The code above would change our simple paragraph into something more interesting. First, we change the colour 
-                    attribute of our text to red, next we change the font size to 10px, and finally, we change the line height to 1.6 
-                    times normal (line-height is the same as line spacing in word). The code above can be broken into different parts: 
-                    First is the selector which is simply the “p” before the curly brackets (this is selecting all [p][/p] tags), second 
-                    are the properties/attributes which are “color”, “font-size” and “line-height”, which decide the attribute of the 
-                    selected element that will be changed, and finally we have the values which are “red”, “10px” and “1.6”, these are 
-                    values given to each attribute.
-
-                    <br><br>
-
-                    &nbsp; &nbsp; A final thing to add is about the different types of HTML elements. HTML elements can be categorized as block or 
-                    inline. Block elements are elements that by default go on separate lines from other elements. Inline elements don’t 
-                    separate and simply go beside other elements.
-
-                    <br><br>
-
-                    Example #1 Inline Elements:
-                    <br>
-                    [element1] [element2]
-                    <br>
-                    Example #2 Block Elements:
-                    <br>
-                    [element1]
-                    <br>
-                    [element2]
-
-                    <br><br>
-
-                    &nbsp; &nbsp; In the examples shown above we can see the two different types of elements. Example #1 shows element2 as an inline 
-                    element and Example #2 shows element2 as a block element. You can change an element to inline or block using the 
-                    “display” attribute in CSS, this can be seen in the examples below:
-
-                    <br><br>
-
-                    Example #1
-                    <br>
-                    p {
-                        <br>
-                        &nbsp; &nbsp; display: inline;
-                        <br>
-                    }
-
-                    <br><br>
-                        
-                    Example #2
-                    <br>
-                    p {
-                        <br>
-                        &nbsp; &nbsp; display: block;
-                        <br>
-                    }
-
-                    <br><br>
-
-                    &nbsp; &nbsp; In this article we learned some basics of HTML and CSS and what they are. I hope you enjoyed the article, if you 
-                    want to learn more about CSS and HTML you can further into some intermediate articles about web development.
-                </p>
+            <div class="articles">
+                <div>
+                    <h2>Articles</h2>
+                    <ul>
+                        <li><a href="pumpkin-carving.html">Pumpkin Carving Tutorial</a></li>
+                        <li><a href="ssl.html">What is SSL</a></li>
+                        <li><a href="btd6-guide.html">Bloons Tower Defense 6 Beginners Guide</a></li>
+                        <li><a href="html-css.html">HTML and CSS</a></li>
+                        <li><a href="lynch-guide.html">BTD6 Lynch Guide</a></li>
+                    </ul>
+                </div>
             </div>
 
-            <div class="article">
-                <h2>SSL</h2>
-
-                <br><br>
-
-                <p>
-                    &nbsp; &nbsp; Secure Sockets Layer (SSL) is a protocol that keeps internet connections secure. It does this by protecting 
-                    information from being stolen as its transferred from one system to another system. These systems could be clients 
-                    or servers. For example, when you access your Gmail you are accessing a web server as a client of that web server. 
-                    When sending and receiving emails there is a good chance SSL is being used to secure the connection and protect the 
-                    information being transferred. Although SSL has been replaced by Transport Layer Security (TLS). TLS isn’t much 
-                    different from SSL, and simply replaced SSL and has some improved security features.
-
-                    <br><br>
-
-                    &nbsp; &nbsp; Security when using the internet is very important. When sending messages, emails and accessing files over the 
-                    internet you are very vulnerable to cyber security threats. Your data such as personal information and 
-                    email/message history can be broken into by hackers during transport. Your emails and messages and account 
-                    information can contain your name, age, address, postal code and even your credit card information. That’s where 
-                    TLS comes in. It helps to protect your data and information from cyber security threats. You can tell the website 
-                    your accessing is secured by TLS by the padlock symbol beside the website URL. This means the website is using 
-                    Hypertext Transport Protocol Secure (HTTPS). This is the secure version of Hypertext Transport Protocol (HTTP). 
-                    The secure version uses TLS to secure web communications.
-
-                    <br><br>
-
-                    &nbsp; &nbsp; Encryption is the main thing protecting your data. Encryption is when normal text also called plaintext is 
-                    encrypted and turned into ciphertext. Encryption can come in many different forms and types. For example, they can 
-                    vary in key size which is the length of the encryption. Common key sizes can range from 128 bits to 256. The more 
-                    bits the better the encryption. Just like any other form of physical or technological security. For example, a lock 
-                    that has 8 numbers or letters has many more possible combinations than one with only 4 numbers or letters. So, 
-                    256-bit encryption has more possibilities than 128-bit encryption and therefor is much more secure. TLS currently 
-                    only supports key sizes ranging from 128 bits to 256 bits. Although 128-bit encryption is very secure and takes a 
-                    lot of computational power to decrypt.
-
-                    <br><br>
-
-                    &nbsp; &nbsp; Another thing that SSL/TLS uses are SSL Certificates. SSL are digital certificates which are bound to 
-                    cryptographic keys. These keys are then used to secure sessions between a user (client) and the web server. For the 
-                    browser to trust the certificate is must have the same URL of the website using it, be issues by a legitimate 
-                    Certificate Authority (CA) and not be expired. So, a digital certificate is basically a websites identification 
-                    almost like a driver’s license. It identifies the website and identifies that it’s a secure website. The reason 
-                    these certificates are given by Certificate Authorities which are trusted organizations. These organizations make 
-                    sure that sites are secure and that online interactions can be done securely.
-
-                    <br><br>
-
-                    &nbsp; &nbsp; In conclusion, when using the internet and accessing various websites, it’s a good idea to search for the 
-                    padlock icon beside the URL. It isn’t do or die, but it helps to secure your personal information and make your 
-                    online interactions private.
-
-                    <br><br>
-
-                    <span>Sources:</span>
-
-                    <br><br>
-
-                    Parms, J. (2021, June 23). SSL vs. TLS - what are differences? SSL2BUY Wiki - Get Solution for SSL Certificate Queries. Retrieved October 5, 2021, from https://www.ssl2buy.com/wiki/ssl-vs-tls.
-
-                    <br><br>
-
-                    What is HTTPS? | cloudflare. Cloudflare. (n.d.). Retrieved October 5, 2021, from https://www.cloudflare.com/en-ca/learning/ssl/what-is-https/.
-
-                    <br><br>
-
-                    Admin. (2020, December 8). What is a certificate authority? GlobalSign GMO Internet, Inc. Retrieved October 5, 2021, from https://www.globalsign.com/en/ssl-information-center/what-are-certification-authorities-trust-hierarchies.
-
-                    <br><br>
-
-                    What is SSL, TLS and HTTPS? DigiCert. (n.d.). Retrieved October 5, 2021, from https://www.websecurity.digicert.com/en/ca/security-topics/what-is-ssl-tls-https.
-                </p>
-            </div>
-
-            <footer>
+            <footer class="footer">
                 <div class="icons">
                     <div class="icon-container facebook">
                         <i class="fab fa-facebook icon"></i>
@@ -216,8 +55,6 @@
                         <i class="fab fa-twitter icon"></i>
                     </div>
                 </div>
-
-
 
                 <div class="footer-text">
                     <p>Copyright &copy; 2021</p>
