@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Data Types Table</title>
+        <link rel="stylesheet" href="assets/images/scripts/style.css">
+        <script src="assets/images/scripts/interaction.js"></script>
+
+        <header>
+            <p>Welcome</p>
+            <ul id="nav">
+                <li class="links"><a href="index.html">Home</a></li>
+                <li class="links"><a href="articles.html">Articles</a></li>
+                <li class="links"><a href="contact-me.html">Contact Me</a></li>
+                <li class="links"><a href="about-me.html">About Me</a></li>
+            </ul>
+
+            <div class="mobile-nav">
+                <p><i class="fas fa-bars menu" title="Menu"></i></p>
+            </div>
+        </header>
+
+        <style>
+
+            .interact {
+                padding: 5px;
+                box-shadow: 2px 2px #555;
+                width: 90%;
+                margin: 0 auto;
+            }
+
+            #grid-container {
+                display: grid;
+                grid-template-areas: 
+                "gb1 gb2 gb3"
+                ;
+
+                width: 90%;
+                margin: 0 auto;
+                margin-top: 50px;
+            }
+
+            #grid-container2 {
+                display: grid;
+                grid-template-areas: 
+                "i1 i2 i3 i4"
+                ;
+
+                width: 90%;
+                margin: 0 auto;
+                margin-top: 50px;
+            }
+
+            #gb1 {
+                grid-area: gb1;
+            }
+
+            #gb2 {
+                grid-area: gb2;
+            }
+
+            #gb3 {
+                grid-area: gb3;
+            }
+
+            .gb {
+                width: 90%;
+                margin: 0 auto;
+                line-height: 1.4;
+            }
+
+            #interact1 {
+                grid-area: i1;
+            }
+
+            #interact2 {
+                grid-area: i2;
+            }
+
+            #interact3 {
+                grid-area: i3;
+            }
+
+            #interact4 {
+                grid-area: i4;
+            }
+        </style>
+    </head>
+
+    <body id="body">
+            <div id="grid-container">
+                <div id="gb1" class="gb">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+                        magna aliqua. Neque gravida in fermentum et. Purus viverra accumsan in nisl nisi scelerisque eu ultrices. 
+                        Tellus rutrum tellus pellentesque eu tincidunt tortor. Purus viverra accumsan in nisl nisi scelerisque eu.
+                    </p>
+                </div>
+
+                <div id="gb2" class="gb">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+                        magna aliqua. Neque gravida in fermentum et. Purus viverra accumsan in nisl nisi scelerisque eu ultrices. 
+                        Tellus rutrum tellus pellentesque eu tincidunt tortor. Purus viverra accumsan in nisl nisi scelerisque eu.
+                    </p>
+                </div>
+
+                <div id="gb3" class="gb">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+                        magna aliqua. Neque gravida in fermentum et. Purus viverra accumsan in nisl nisi scelerisque eu ultrices. 
+                        Tellus rutrum tellus pellentesque eu tincidunt tortor. Purus viverra accumsan in nisl nisi scelerisque eu.
+                    </p>
+                </div>
+            </div>
+
+            <div id="grid-container2">
+                <input id ="interact1" class="interact" type="button" value="Change P1's colour" onclick="changep1('gb1')">
+
+                <input id ="interact2" class="interact" type="button" value="Increase font size" onclick="increaseBy1px('gb2', 1)">
+
+                <input id ="interact3" class="interact" type="button" value="Increase font size" onclick="increaseBy1px('section', 1)">
+
+                <input id ="interact4" class="interact" type="button" value="Colour change" onclick="changeBackColor('section')">
+            </div>
+    </body>
+</html>

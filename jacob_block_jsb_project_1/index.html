@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Data Types Table</title>
+        <link rel="stylesheet" href="assets/styles/style.css">
+        <script src="assets/scripts/script.js"></script>
+
+        <header id="heading">
+            <p>Welcome</p>
+            <ul id="nav">
+                <li class="links"><a href="">Home</a></li>
+                <li class="links"><a href="">Github</a></li>
+                <li class="links"><a href="">Contact Me</a></li>
+                <li class="links"><a href="">About Me</a></li>
+            </ul>
+        </header>
+    </head>
+
+    <body id="background">
+        <div id="flex-container">
+            <div class="converter" id="convert1">
+                <h2 class="title" id="head1">Celsius to Fahrenheit</h2>
+                <input type="text" class="inputs" id="cToF" name="cToF">
+                <button class="buttons" onclick="cToF()" id="btn1">Calculate</button>
+                <br><br>
+                <p class="answers" id="answ1">Answer</p>
+            </div>
+
+            <div class="converter" id="convert2">
+                <h2 class="title" id="head2">Fahrenheit to Celsius</h2>
+                <input type="text" class="inputs" id="fToC" name="fToC">
+                <button class="buttons" onclick="fToC()" id="btn2">Calculate</button>
+                <br><br>
+                <p class="answers" id="answ2">Answer</p>
+            </div>
+        </div>
+
+        <button class="mode" onclick="modeSwitch()" id="mode">Dark Mode</button>
+    </body>
+</html>
