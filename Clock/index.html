@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Alarm Clock</title>
+        <link rel="stylesheet" href="assets/styles/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+        <script defer src="assets/script/script.js"></script>
+
+        <header id="heading">
+            <p>Alarm Clock</p>
+            <ul id="nav">
+                <li class="links"><a href="">Alarm Clock</a></li>
+                <li class="links"><a href="">Clock Backgrounds</a></li>
+                <li class="links"><a href="">Premium</a></li>
+            </ul>
+        </header>
+    </head>
+
+    <body onload="startTime()">
+        <form>
+            <div id="timer"></div>
+            <div class="set-alarm">
+                <input type="text" name="alarm" id="alarm" placeholder="hh:mm">
+                <input onclick="setTimer(); buttonClicked()" type="button" name="set" id="set" value="Set Alarm">
+            </div>
+            <div class="alarm-container">
+                <p class="alarms" id="alarm1"></p>
+                <button onclick="delAlarm1(); buttonClicked()" class="delete" type="button" id="del1">Delete</button>
+            </div>
+            <div class="alarm-container">
+                <p class="alarms" id="alarm2"></p>
+                <button onclick="delAlarm2(); buttonClicked()" class="delete" type="button" id="del2">Delete</button>
+            </div>
+            <div class="alarm-container">
+                <p class="alarms" id="alarm3"></p>
+                <button onclick="delAlarm3(); buttonClicked()" class="delete" type="button" id="del3">Delete</button>
+            </div>
+            <p id="message" class="alarms" style="font-size: 20px;"></p>
+        </form>
+
+        <footer>
+            <div class="icons">
+                <div class="icon-container facebook">
+                    <i class="fab fa-facebook icon"></i>
+                </div>
+        
+                <div class="icon-container instagram">
+                    <i class="fab fa-instagram icon"></i>
+                </div>
+                    
+                <div class="icon-container twitter">
+                    <i class="fab fa-twitter icon"></i>
+                </div>
+            </div>
+
+            <div class="footer-text">
+                <p>Copyright &copy; 2022</p>
+            </div>
+        </footer>
+    </body>
+</html>
