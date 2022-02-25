@@ -10,14 +10,15 @@
         <script defer src="assets/scripts/script.js"></script>
     </head>
 
-    <body>
+    <body onload="music()">
+
         <h1 id="level">Level: 1</h1>
 
         <div class="race_track" id="main">
-            <img class="cars" id="player" src="assets/images/mercedes_car.png">
-            <img class="cars" id="ai" src="assets/images/red_bull_car.png">
+            <img class="cars" id="player" src="assets/images/blue_car.png">
+            <img class="cars" id="ai" src="assets/images/red_car.png">
         </div>
 
-        <button onclick="clicked()" type="button" class="button" id="clickButton">Rapidly Click Here</button>
+        <input onclick="clicked()" type="button" class="button" id="clickButton" value="Start">
     </body>
 </html>
